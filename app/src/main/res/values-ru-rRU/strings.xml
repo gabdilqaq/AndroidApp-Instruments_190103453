@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Инструменты_190103453</string>
+    <string name="main_text">Домашняя страница</string>
+    <string name="change_btn">ИЗМЕНИТЬ</string>
+    <string name="send">ОТПРАВИТЬ</string>
+    <string name="edittext">пиши здесь</string>
+    <string name="start">НАЧАТЬ!</string>
+    <string name="timer">ТАЙМЕР</string>
+    <string name="start_btn">СТАРТ</string>
+    <string name="stop">СТОП</string>
+    <string name="reset">ЗАНОВО</string>
+    <string name="converter">КОНВЕРТЕР</string>
+    <string name="solve_btn">SOLVE</string>
+    <string name="welcome">WELCOME TO CURRENCY CONVERSATION</string>
+    <string name="contacts">КОНТАКТЫ</string>
+</resources>

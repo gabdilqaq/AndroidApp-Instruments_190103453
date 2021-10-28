@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_text"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/languages"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:prompt="@array/lang_arr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/change_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languages" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/messageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="30dp"
+        app:cardBackgroundColor="@color/aa"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/change_btn">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="@string/edittext"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/send" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timer_layout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/aa"
+        app:cardCornerRadius="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_btn">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/timer"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/start_btn" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/aa"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageview">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/converter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/converter"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/solve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/solve_btn"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="@color/aa"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_layout">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/contacts"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SHOW" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

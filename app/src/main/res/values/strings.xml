@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Instruments_190103453</string>
+    <string name="main_text">Home Page</string>
+    <string-array name="lang_arr">
+        <item>US</item>
+        <item>RU</item>
+        <item>KZ</item>
+    </string-array>
+    <string name="change_btn">CHANGE</string>
+    <string name="send">SEND</string>
+    <string name="edittext">write here</string>
+    <string name="timer">TIMER</string>
+    <string name="start">START</string>
+    <string name="start_btn">START!</string>
+    <string name="stop">STOP</string>
+    <string name="reset">RESET</string>
+    <string name="converter">CONVERTER</string>
+    <string name="solve_btn">SOLVE</string>
+    <string name="welcome">WELCOME TO CURRENCY CONVERSATION</string>
+    <string name="contacts">CONTACTS</string>
+</resources>
