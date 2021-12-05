@@ -14,4 +14,5 @@
     <string name="solve_btn">SOLVE</string>
     <string name="welcome">WELCOME TO CURRENCY CONVERSATION</string>
     <string name="contacts">КОНТАКТІЛЕР</string>
+    <string name="sendMessage">SEND MESSAGE TO ANOTHER ACTIVITY</string>
 </resources>

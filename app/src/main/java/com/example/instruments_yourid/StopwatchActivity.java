@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -37,7 +38,8 @@ public class StopwatchActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if (wasRunning) {
-            running = true; }
+            running = true;
+        }
     }
 
 
@@ -51,11 +53,11 @@ public class StopwatchActivity extends AppCompatActivity {
         running = false;
         seconds = 0;
     }
-
+    @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putInt("seconds", seconds);
-        savedInstanceState.putBoolean("running", running);
+        savedInstanceState.putBoolean("running", wasRunning);
     }
 
 
@@ -72,8 +74,10 @@ public class StopwatchActivity extends AppCompatActivity {
                 int secs = seconds%60;
                 String time = String.format("%d:%02d:%02d",hours, minutes, secs);
                 timeView.setText(time);
-                if (running) { seconds++;
+                if (running) {
+                    seconds++;
                 }
+//                Log.i("Voca",""+seconds);
                 handler.postDelayed(this, 1000); }
         });
     }
